@@ -13,32 +13,24 @@ public class AIScript : MonoBehaviour
     private void Start()
     {
         navMesh = GetComponent<NavMeshAgent>();
+        //StartCoroutine(ShowText("sdfffffffjkabsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddk"));
     }
     void Update()
     {
         if (Vector3.Distance(transform.position, player.position) > maxDistance)
         {
-            navMesh.SetDestination(player.position - new Vector3(1f,0f,0f));
+            navMesh.SetDestination(player.position - new Vector3(0f,0f,1f));
         }
     }
-    private void OnTriggerEnter(Collider other)
+    public void Kitchen()
     {
-        if (other.gameObject.tag == "kitchen")
-        {
-            StartCoroutine(ShowText("Как вы видите, на кухне творится полный ужас - пьющие мужчины," +
-            " огромно количество бутылок спиртных напитков,n с которыми играются дети, " +
-            "наполненные шрамами от побоев. Это ужасно! "));
-            Destroy(other);
-        }
-        else if(other.gameObject.tag == "bathroom")
-        {
-            StartCoroutine(ShowText("Текст про ванную"));
-        }
-        else if(other.gameObject.tag == "sleep")
-        {
-            StartCoroutine(ShowText("Sleep"));
-        }
-        
+        StartCoroutine(ShowText("sdfffffffjkabsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddk"));
+    }
+    public void BathRoom()
+    {
+
+    }
+    public void Sleep() {
     }
     private IEnumerator ShowText(string text)
     {

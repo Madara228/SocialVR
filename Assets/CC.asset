@@ -103,7 +103,7 @@ MonoBehaviour:
       bloom:
         intensity: 1.07
         threshold: 1.1
-        softKnee: 0.765
+        softKnee: 0.54
         radius: 4.87
         antiFlicker: 0
       lensDirt:
@@ -114,7 +114,7 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.036
+        neutralBlackIn: 0.1
         neutralWhiteIn: 16.49
         neutralBlackOut: 0
         neutralWhiteOut: 7.93
