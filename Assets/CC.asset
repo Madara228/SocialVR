@@ -30,7 +30,7 @@ MonoBehaviour:
     m_Settings:
       excludeSkybox: 1
   antialiasing:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       method: 0
       fxaaSettings:
@@ -41,7 +41,7 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       intensity: 1
       radius: 0.3
@@ -101,7 +101,7 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1.07
+        intensity: 2
         threshold: 1.1
         softKnee: 0.54
         radius: 4.87
@@ -114,8 +114,8 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 2
-        neutralBlackIn: 0.0316
-        neutralWhiteIn: 16.49
+        neutralBlackIn: 0.0242
+        neutralWhiteIn: 14.21
         neutralBlackOut: 0
         neutralWhiteOut: 7.93
         neutralWhiteLevel: 4.7
@@ -135,8 +135,8 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 0.9583938, b: 0.70165306, a: 0}
-          power: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 1, g: 0.8336461, b: 0.6095128, a: 0}
+          power: {r: 0.97239554, g: 1, b: 0.99999994, a: 0}
           offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
           lift: {r: 0, g: 0, b: 0, a: 0}
@@ -323,7 +323,7 @@ MonoBehaviour:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.45
+      intensity: 0.41
       smoothness: 0.2
       roundness: 1
       mask: {fileID: 0}

@@ -17,7 +17,7 @@ public class TriggerScript : MonoBehaviour
         if (other.gameObject.tag == "Zapah")
         {
             Debug.Log("Zapah");
-            StartCoroutine(ShowText("Вы почувствовали неприятный запах",mtxt));
+            StartCoroutine(ShowText("Вы почувствовали неприятный запах",capsuleText));
             Destroy(other.gameObject);
         }
         else if(other.gameObject.tag == "kitchen")
@@ -35,13 +35,13 @@ public class TriggerScript : MonoBehaviour
         else if(other.gameObject.tag == "bathroom")
         {
             Debug.Log("bath");
+            StartCoroutine(ShowText("Мы просто давно не делали ремонта", capsuleText));
         }
-            
-                
-                //else if(other.gameObject.tag == "")
-        //{
-            
-        //}
+        else if(other.gameObject.tag == "NotUse")
+        {
+            Debug.Log("NotUse");
+            StartCoroutine(ShowText("В эту зону нельзя",capsuleText));
+        }
     }
 
     

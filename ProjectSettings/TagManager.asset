@@ -10,6 +10,7 @@ TagManager:
   - bathroom
   - sleep
   - Zapah
+  - NotUse
   layers:
   - Default
   - TransparentFX

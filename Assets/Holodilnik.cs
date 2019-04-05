@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class Holodilnik : MonoBehaviour
 {
-    public Animator animator;
+
+    public GameObject door;
+    public GameObject door1;
 
 
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
 
     public void playAnim()
     {
-        animator.Play("hololnik");
+        door.transform.localRotation = Quaternion.Euler(-90, door.transform.rotation.y, -90); 
+    }
+    public void RotateDoor()
+    {
+            //door1.transform.localRotation = Quaternion.Euler(-90, 0, 180);
+       
     }
 }
