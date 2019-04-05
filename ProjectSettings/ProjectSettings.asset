@@ -607,6 +607,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
     Collab: 1
     UNet: 1
   luminIcon:
@@ -628,10 +629,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 9ff74835-9299-46af-aeb3-ee668298b5a7
+  cloudProjectId: c94547f0-5b6c-4c38-8a30-da25c55a4413
   framebufferDepthMemorylessMode: 0
   projectName: ReleaseSocialVR
-  organizationId: kadyrkaragishiev
+  organizationId: kvantorium05
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

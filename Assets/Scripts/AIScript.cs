@@ -13,25 +13,15 @@ public class AIScript : MonoBehaviour
     private void Start()
     {
         navMesh = GetComponent<NavMeshAgent>();
-        //StartCoroutine(ShowText("sdfffffffjkabsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddk"));
     }
     void Update()
     {
         if (Vector3.Distance(transform.position, player.position) > maxDistance)
         {
-            navMesh.SetDestination(player.position - new Vector3(0f,0f,1f));
+            navMesh.SetDestination(player.position - new Vector3(0f,0f,2f));
         }
     }
-    public void Kitchen()
-    {
-        StartCoroutine(ShowText("sdfffffffjkabsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddk"));
-    }
-    public void BathRoom()
-    {
 
-    }
-    public void Sleep() {
-    }
     private IEnumerator ShowText(string text)
     {
         string output = "";

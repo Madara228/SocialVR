@@ -9,6 +9,7 @@ TagManager:
   - kitchen
   - bathroom
   - sleep
+  - Zapah
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - PostProcessing
   - Player
-  - 
+  - Obstacle
   - 
   - 
   - 
